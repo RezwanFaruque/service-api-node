@@ -1,0 +1,21 @@
+{
+  "name": "kajerhut-api-node",
+  "version": "1.0.0",
+  "description": "This is service marketplace based api service ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Rezwan Faruque",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "kajerhut-api-node": "file:",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
