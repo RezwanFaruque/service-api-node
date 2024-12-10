@@ -6,7 +6,7 @@ const router = express.Router();
 const httpRequest = require('../common/common');
 
 
-httpRequest(router,'GET','/home');
+// httpRequest(router,'GET','/home',getHomeData);
 
 
 

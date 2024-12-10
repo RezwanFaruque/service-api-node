@@ -1,18 +1,18 @@
 
 // COMMON HTTP REQUEST HANDLER
-const httpRequest = (router, requestMethod, requestUrl) => {
+const httpRequest = (router, requestMethod, requestUrl,callback) => {
     if (requestMethod === 'GET') {
       router.get(requestUrl, (req, res) => {
-        res.send('Hello from GET route');
+        callback(req,res);
       });
     } else if (requestMethod === 'POST') {
       router.post(requestUrl, (req, res) => {
-        res.send('Hello from POST route');
+        callback(req,res);
       });
     } else {
       // Handle other HTTP methods if needed
       router.all(requestUrl, (req, res) => {
-        res.send(`Handled ${requestMethod} request`);
+        callback(req,res);
       });
     }
   };
