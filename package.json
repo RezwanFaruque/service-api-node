@@ -13,7 +13,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "kajerhut-api-node": "file:",
-    "mysql2": "^3.11.3"
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
